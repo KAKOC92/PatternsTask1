@@ -18,15 +18,15 @@ import static com.codeborne.selenide.Selenide.open;
 public class AppReplanDeliveryTest {
 
     @BeforeAll
-    static void setUpAlll(){
+    static void setUpAll(){
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
     @AfterAll
-    static void tearDownAlll(){ SelenideLogger.removeListener("allure");}
+    static void tearDownAll(){ SelenideLogger.removeListener("allure");}
 
     @BeforeEach
-    void setUpAll() {
+    void setUp() {
         open("http://localhost:9999/");
     }
 
